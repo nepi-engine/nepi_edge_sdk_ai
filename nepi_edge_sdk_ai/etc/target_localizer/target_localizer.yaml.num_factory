@@ -1,0 +1,11 @@
+display_name: target_localizer
+
+# Target Localization
+classifier_full_namespace: /nepi/s2x/classifier/classifier                  # Namespace for classifer node to connect to
+depth_cam_full_namespace: /nepi/s2x/sensor_3dx/stereo_cam_driver/depth      # Namespace for depth image producer to connect to
+data_out_frame_id: nepi_center_frame                                        # Output frame id for localization data (range, azimuth, angle)
+range_avg_subbox_ratio: 0.5                                                 # X and Y axis ratios for central sub-box of bounding box over which to average target range
+
+# Target Tracking
+target_tracking_enabled: true                                               # True to enable target tracking
+tracked_target_lost_period: 10.0                                            # Absence time in seconds before a target is declared lost and its tracking ID is retired
