@@ -1,26 +1,10 @@
 <!--
-NEPI Dual-Use License
-Project: nepi_edge_sdk_ai
+Copyright (c) 2024 Numurus, LLC <https://www.numurus.com>.
 
-This license applies to any user of NEPI Engine software
+This file is part of nepi-engine
+(see https://github.com/nepi-engine).
 
-Copyright (C) 2023 Numurus, LLC <https://www.numurus.com>
-see https://github.com/numurus-nepi/nepi_edge_sdk_ai
-
-This software is dual-licensed under the terms of either a NEPI software developer license
-or a NEPI software commercial license.
-
-The terms of both the NEPI software developer and commercial licenses
-can be found at: www.numurus.com/licensing-nepi-engine
-
-Redistributions in source code must retain this top-level comment block.
-Plagiarizing this software to sidestep the license obligations is illegal.
-
-Contact Information:
-====================
-- https://www.numurus.com/licensing-nepi-engine
-- mailto:nepi@numurus.com
-
+License: 3-clause BSD, see https://opensource.org/licenses/BSD-3-Clause
 -->
 # nepi_edge_sdk_ai #
 This repository provides the _nepi_edge_sdk_ai_ ROS node and support files. The _nepi_edge_sdk_ai_ runs NEPI’s AI Model Management (AIM) system, which provides a framework for storing, connecting, and running AI models from an onboard AI model library, as well as publishing AIM results to downstream consumers like a NEPI automation script of connected control system. The AIM system manages which of the available AI models is active at a given time, which sensor stream is provided as input to the active model, and any additional parameters related to AI model execution. The AIM system also supports external AI process orchestration such as active model selection and on-the-fly data input switching. The AIM system supports AI model output logging and ensures AI model outputs adhere to a standard ROS 2D label topic format, ensuring a consistent interface for both on-board and off-board consumers of the AIM data output streams.
